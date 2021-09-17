@@ -1,4 +1,4 @@
-DAT250 Assignment 3
+#DAT250 Assignment 3
 Exercise 1 [X]
 Exercise 2 []
 Exercise 3 []
