@@ -1,10 +1,12 @@
 # DAT250 Assignment 3
-Exercise 1 [X]
+
+Verify installation [x]
+
+Exercise 1 [x]
 
 
 Exercise 2 []
 
-Exercise 3 []
 
 
 ## Verify installation
