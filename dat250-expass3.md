@@ -1,7 +1,15 @@
-#DAT250 Assignment 3
+# DAT250 Assignment 3
 Exercise 1 [X]
+
+
 Exercise 2 []
+
 Exercise 3 []
+
+
+## Verify installation
+I followed the tutorial as told in the assignment.
+![bilde](https://user-images.githubusercontent.com/44643583/133894126-7ec9ee21-df91-4bf1-8417-4c2e64ecf48d.png)
 
 
 ## Exercise 1
@@ -37,7 +45,6 @@ Bulk write [X]
 
 Confirm that the status is now false. This was set to true to begin with.
 
-`   `
 
 ### Delete a single object
 `db.users.deleteOne({"email":"test@gmail.com"})`
@@ -45,4 +52,7 @@ Confirm that the status is now false. This was set to true to begin with.
 ### Bulk write
 
 `db.users.bulkWrite([{insertOne: {"firstname": "Test", "lastname":"Test", "email":"Test3@gmail.com", "active":false} }, { deleteOne :{ "filter" : { "active" : false}}}])`
-`
+
+
+
+## Exercise 2
