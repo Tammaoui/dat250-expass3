@@ -71,5 +71,5 @@ Goal of the map-reduce operation is to output a collection of key, value pairs w
 )
 `
 
-## The result is as expected, a collection where the _id is the customer and value is the amount of orders for that customer:
+### The result is as expected, a collection where the _id is the customer and value is the amount of orders for that customer:
 ![bilde](https://user-images.githubusercontent.com/44643583/133941393-c1fadd43-9a1c-4462-9382-e5d96481f65e.png)
