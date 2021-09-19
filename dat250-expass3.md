@@ -1,11 +1,5 @@
 # DAT250 Assignment 3
 
-Verify installation [x]
-
-Exercise 1 [x]
-
-
-Exercise 2 []
 - [X]  Verify installation
 - [X]  Experiment 1: MongoDB CRUD operations
 - [X]  Experiment 2: Aggregation
