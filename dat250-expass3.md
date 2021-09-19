@@ -57,30 +57,19 @@ Confirm that the status is now false. This was set to true to begin with.
 
 
 
-## Exercise 2
-Add an additional operation developed by you and show its result given by its execution.
-
-- Map: Process input data and create several small chunks of data.
-- Reduce: Process data that comes from the mapper and store it in a new set of output.
-
+## Exercise 2 - Add an additional operation developed by you and show its result given by its execution.
 Goal of the map-reduce operation is to output a collection of key, value pairs where the key is the id, and the value is how many orders the customer has. The value of this operation is to display how many orders each customer has had in the collection.
 
-`var mapFunction1 = function() {emit(this._id, this.cust_id)}`
+`var mapFunction1 = function() {emit(this.cust_id, this._id)}`
 
-`var reduceFunction1 = function(keyId, customerIds) {return Array.sum(customerIds)}`
+`var reduceFunction1 = function(keyId, customerIds) {return customerIds.length}`
 
 `db.orders.mapReduce(
    mapFunction1,
    reduceFunction1,
-   { out: "map_orders_each_customer" }
+   { out: "custom_map" }
 )
 `
-To do this with aggregation:
 
-`
-db.orders.aggregate([
-    {$group: {_id: "$_id", value: {$sum: $cust_id}}},
-    {$out: "map_orders_each_customer"}
-])
-`
-
+## The result is as expected, a collection where the _id is the customer and value is the amount of orders for that customer:
+![bilde](https://user-images.githubusercontent.com/44643583/133941393-c1fadd43-9a1c-4462-9382-e5d96481f65e.png)
